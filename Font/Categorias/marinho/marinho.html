@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets - Marinho</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-top: 10px;
+        }
+
+        .submenu li {
+            display: block;
+            padding: 10px;
+        }
+
+        header ul li:hover .submenu {
+            display: block;
+        }
+
+        .menu-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        #mini-categories button{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        #mini-categories{
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        h3{
+            margin-top: 50px;
+        }
+    </style>
+    <link rel="icon" href="../../../Images/Logo.png" type="image/png">
+    <link rel="stylesheet" href="../../../Static/head.css">
+    <link rel="stylesheet" href="../../../Static/slide.css">
+    <link rel="stylesheet" href="../../../Static/zap.css">
+    <link rel="stylesheet" href="../../../Static/categories.css">
+    <link rel="stylesheet" href="../../../Static/footer.css">
+</head>
+<body>
+    <header>
+        <a href="../../index.html"><img id="logo" src="../../../Images/PEts.png"></a>
+        <form action="">
+            <input id="search" type="text" placeholder="Pesquise...">
+            <input id="searchsub" type="submit" value="Procurar">
+        </form>
+        <ul>
+            <li class="menu-container"><h3>Animais</h3>
+                <ul class="submenu">
+                    <li><a href="../../Categorias/cachorro/cachorro.html">Cachorros</a></li>
+                    <li><a href="../../Categorias/gato/gato.html">Gatos</a></li>
+                    <li><a href="../../Categorias/passaro/passaro.html">Pássaros</a></li>
+                    <li><a href="../../Categorias/reptil/reptil.html">Répteis</a></li>
+                    <li><a href="../../Categorias/marinho/marinho.html">Marinhos</a></li>
+                </ul>
+            </li>
+            <li class="menu-container"><h3>Produtos</h3>
+                <ul class="submenu">
+                    <li><a href="../../Produtos/racao/racao.html">Rações</a></li>
+                    <li><a href="../../Produtos/brinquedo/brinquedo.html">Brinquedos</a></li>
+                    <li><a href="../../Produtos/acessorio/acessorio.html">Acessórios</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <section>
+            <div id="mini-categories">
+                <a href="#" class="scrollLink" data-scroll="445"><button class="utton"><span>Rações</span></button></a>
+                <a href="#" class="scrollLink" data-scroll="1000"><button class="utton"><span>Acessórios</span></button></a>
+            </div>
+        </section>
+        <section>
+            <h3>Marinhos</h3>
+            <div class="cat">
+                <button class="cat-arrow left">&#10094;</button>
+                <div class="cat-track-container">
+                    <div class="cat-track">
+                        <a href="#"><button><img src="../../../Images/categoria/marinho/Estrela-do-mar.jpeg" alt="marinho 1"><p>Controle de Algas e Detritos <br> Beleza e Variedade de Cores</p><br><span>R$200</span><div><strong>Estrela-do-mar</strong></div></button></a>
+                        <a href="#"><button><img src="../../../Images/categoria/marinho/Axolote.jpg" alt="marinho 2"><p>Capacidade de Regeneração <br> Aparência Distintiva</p><br><span>R$230</span><div><strong>Axolote</strong></div></button></a>
+                        <a href="#"><button><img src="../../../Images/categoria/marinho/Peixe-cirurgiao.jpeg" alt="marinho 3"><p>Controle de Algas <br> Beleza e Padrões Coloridos</p><br><span>R$50</span><div><strong>Peixe-cirurgião</strong></div></button></a>
+                        <a href="#"><button><img src="../../../Images/categoria/marinho/Peixe-palhaco.jpeg" alt="marinho 4"><p>Relação com Anêmonas <br> Cores Vibrantes e Atraentes</p><br><span>R$30</span><div><strong>Peixe-palhaço</strong></div></button></a>
+                        <a href="#"><button><img src="../../../Images/categoria/marinho/Caranguejo-eremita.jpeg" alt="marinho 5"><p>Função de Limpeza <br> Comportamento Interessante</p><br><span>R$210</span><div><strong style="margin-right: 20px">Caranguejo-eremita</strong></div></button></a>
+                        <a href="#"><button><img src="../../../Images/categoria/marinho/Anemona-do-mar.jpg" alt="marinho 6"><p>Estética e Beleza <br> Proteção para Peixes</p><br><span>R$1.200</span><div><strong style="margin-right: 30px">Anêmona-do-mar</strong></div></button></a>
+                        <a href="#"><button><img src="../../../Images/categoria/marinho/Camarao.jpg" alt="marinho 7"><p>Função de Limpeza <br> Comportamento Interessante</p><br><span>R$15</span><div><strong>Camarão</strong></div></button></a>
+                        <a href="#"><button><img src="../../../Images/categoria/marinho/Peixe-limpador.jpg" alt="marinho 8"><p>Manutenção do Aquário <br> Comportamento Social</p><br><span>R$40</span><div><strong>Peixe-limpador</strong></div></button></a>
+                        <a href="#"><button><img src="../../../Images/categoria/marinho/Outro.jpeg" alt="marinho 9"><h4>Encontre outras espécies</h4><br><span>Saiba mais...</span></button></a> 
+                    </div>
+                </div>
+                <button class="cat-arrow right">&#10095;</button>
+            </div>
+        </section>
+        <section>
+            <h3>Rações</h3>
+                    <div class="cat">
+                        <div class="cat-track-containeri">
+                            <div class="cat-tracke">
+                                <a href="#"><button><img src="../../../Images/categoria/marinho/produto/racao/Jbl.jpg" alt="Passaro 1"><p>Ração Para Peixes Jbl Novobel 250ml 45g Jbl Para Peixes</p><div><strong>R$18,15</strong></div></button></a>
+                                <a href="#"><button><img src="../../../Images/categoria/marinho/produto/racao/NutriconBo.jpg" alt="Passaro 2"><p>Bottom Fish 150gr Nutricon Para Peixe Tropical Todas As Fases</p><div><strong>R$25,20</strong></div></button></a>
+                                <a href="#"><button><img src="../../../Images/categoria/marinho/produto/racao/NutriconPre.jpg" alt="Passaro 3"><p>Premium Flakes 50gr Nutricon Para Todos Os Tipos de Peixe Adulto</p><div><strong>R$22,00</strong></div></button></a>
+                                <a href="#"><button><img src="../../../Images/categoria/marinho/produto/racao/NutriconSpi.jpg" alt="Passaro 4"><p>Spirulina Fish 100g Nutricon Para Peixe Tropical Todas As Fases</p><div><strong>R$12,30</strong></div></button></a>
+                                <a href="#"><button><img src="../../../Images/categoria/marinho/produto/racao/Poytara.jpg" alt="Passaro 5"><p>Poytara Ração Para Peixes Tropicais Dia Até Dia 35G Para Peixes</p><div><strong>12,99</strong></div></button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Acessórios</h3>
+                    <div class="cat">
+                        <div class="cat-track-containeri">
+                            <div class="cat-tracka">
+                                <a href="#"><button><img src="../../../Images/categoria/marinho/produto/acessorio/aquario.jpeg" alt="Racao 1"><p>Aquarios de vários tamanhos e tipos para o seu peixe</p><div><strong>Saiba mais</strong></div></button></a>
+                                <a href="#"><button><img src="../../../Images/categoria/marinho/produto/acessorio/Decoracao.webp" alt="Racao 2"><p>Várias decorações para deixar a casa do seu peixe mais bonita</p><div><strong>Saiba mais</strong></div></button></a>
+                                <a href="#"><button><img src="../../../Images/categoria/marinho/produto/acessorio/Utensilios.jpg" alt="Racao 3"><p>Ferramentas para facilitar a sua vida e a do seu peixe</p><div><strong>Saiba mais</strong></div></button></a>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+    </main>
+
+    <a href="https://wa.me/5521975427996" target="_blank">
+        <div class="interaction-area">
+            <div class="green-ball"><img src="../Images/Wa.png" alt=""></div>
+            <div class="study-text">Entre em contato com a gente! <br> (21) 97542-7996</div>
+        </div>
+    </a>
+
+    <footer>
+        <div>
+            <p><strong>Institucional</strong><br>
+                <a href="#">Sobre a Pets</a><br>
+                <a href="#">Trabalhe Conosco</a><br>
+                <a href="#">Canal de Denúncias</a><br>
+                <a href="#">Relações com Investidores</a><br>
+                <a href="#">Portal Pets</a><br>
+                <a href="#">Expansão</a><br>
+                <a href="#">Mapa do Site</a><br>
+            </p>
+        </div>
+    
+        <div class="bord"></div>
+    
+        <div class="bort">
+            <p><strong>Aqui Você Encontra</strong><br>
+                <a href="#">Doe para Pets</a><br>
+                <a href="#">Retire na Loja</a><br>
+                <a href="#">Pesquise Lá, Compre Aqui</a><br>
+                <a href="#">Nossos Diferenciais</a><br>
+                <a href="#">Plubs</a><br>
+                <a href="#">Como Comprar</a><br>
+                <a href="#">Petcommerce</a><br>
+            </p>
+        </div>
+    
+        <div class="bord"></div>
+    
+        <div class="bort">
+            <p><strong>Ajuda</strong><br>
+                <a href="#">Atendimento</a><br>
+                <a href="#">Meus Pedidos</a><br>
+                <a href="#">Meu Cadastro</a><br>
+                <a href="#">Minhas Assinaturas</a><br>
+                <a href="#">Ouvidoria</a><br>
+            </p>
+        </div>
+    </footer>
+    <p style="text-align: center;"><strong>Projeto feito apenas por estudo.</strong></p>
+
+    <script src="../../../Js/slide.js"></script>
+    <script>
+        const ball = document.querySelector('.green-ball');
+        const text = document.querySelector('.study-text');
+        const interactionArea = document.querySelector('.interaction-area');
+
+        interactionArea.addEventListener('mouseenter', () => {
+            ball.style.transform = 'translateX(-200px)';
+            text.style.opacity = '1';
+        });
+
+        interactionArea.addEventListener('mouseleave', () => {
+            ball.style.transform = 'translateX(0)';
+            text.style.opacity = '0';
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const track = document.querySelector('.cat-track');
+            const arrows = document.querySelectorAll('.cat-arrow');
+            let currentPosition = 0;
+
+            arrows.forEach(arrow => {
+                arrow.addEventListener('click', function() {
+                    const trackWidth = track.scrollWidth;
+                    const containerWidth = track.parentElement.offsetWidth;
+                    const maxPosition = trackWidth - containerWidth;
+                    const shift = containerWidth / 3; // Ajuste para o tamanho do deslocamento desejado
+
+                    if (arrow.classList.contains('left')) {
+                        currentPosition -= shift;
+                        if (currentPosition < 0) currentPosition = 0;
+                    } else {
+                        currentPosition += shift;
+                        if (currentPosition > maxPosition) currentPosition = maxPosition;
+                    }
+
+                    track.style.transform = `translateX(-${currentPosition}px)`;
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Seleciona todos os links com a classe 'scrollLink'
+            const scrollLinks = document.querySelectorAll('.scrollLink');
+    
+            scrollLinks.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault(); // Evita o comportamento padrão do link
+    
+                    // Recupera o valor do atributo data-scroll e converte para número
+                    const scrollToPosition = parseInt(link.getAttribute('data-scroll'), 10);
+    
+                    // Rola a página até a posição especificada
+                    window.scrollTo({
+                        top: scrollToPosition,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

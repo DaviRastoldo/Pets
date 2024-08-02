@@ -1,0 +1,102 @@
+/* Ajuste para o header */
+header {
+    padding: 20px;
+    position: fixed;
+    z-index: 10; /* Aumentado para garantir que o header esteja acima de outros elementos */
+    background: white;
+    width: 100%;
+    top: 0;
+    margin-left: -22px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+    z-index: 50;
+}
+
+#category-content-b h3 {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+/* Ajuste para o conteúdo que não seja coberto pelo header */
+body {
+    padding-top: 100px; /* Ajuste conforme necessário para evitar que o conteúdo fique coberto pelo header */
+}
+
+header ul {
+    list-style: none;
+    display: inline;
+    margin-right: 50px;
+    float: right;
+    margin-top: -30px;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+header li {
+    display: inline;
+    position: relative; /* Necessário para o submenu */
+}
+
+li h3 {
+    display: inline;
+    padding: 5px;
+}
+
+li h3:hover {
+    background: black;
+    color: white;
+    transition: background-color 0.5s, color 0.9s;
+}
+
+#search {
+    margin-left: 15%;
+    margin-top: 5px;
+    padding: 7px;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 25px 0px 0px 25px;
+    display: inline;
+}
+
+#searchsub {
+    margin-left: -5px;
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 0px 25px 25px 0px;
+    display: inline;
+}
+
+#logo { 
+    height: 60px;
+    width: 180px;
+    float: left;
+}
+
+/* Estilo do submenu */
+.submenu {
+    display: block; /* Mantenha o display como block para o submenu ocupar espaço */
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    z-index: 1;
+    margin-top: 0px;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.submenu li {
+    display: block;
+    padding: 10px;
+}
+
+header li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}

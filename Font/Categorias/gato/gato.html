@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets - Gato</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-top: 10px;
+        }
+
+        .submenu li {
+            display: block;
+            padding: 10px;
+        }
+
+        header ul li:hover .submenu {
+            display: block;
+        }
+
+        .menu-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        #mini-categories button{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        #mini-categories{
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        h3{
+            margin-top: 50px;
+        }
+    </style>
+    <link rel="icon" href="../../../Images/Logo.png" type="image/png">
+    <link rel="stylesheet" href="../../../Static/head.css">
+    <link rel="stylesheet" href="../../../Static/zap.css">
+    <link rel="stylesheet" href="../../../Static/slide.css">
+    <link rel="stylesheet" href="../../../Static/categories.css">
+    <link rel="stylesheet" href="../../../Static/footer.css">
+</head>
+<body>
+    <header>
+        <a href="../../index.html"><img id="logo" src="../../../Images/PEts.png"></a>
+        <form action="">
+            <input id="search" type="text" placeholder="Pesquise...">
+            <input id="searchsub" type="submit" value="Procurar">
+        </form>
+        <ul>
+            <li class="menu-container"><h3>Animais</h3>
+                <ul class="submenu">
+                    <li><a href="../../Categorias/cachorro/cachorro.html">Cachorros</a></li>
+                    <li><a href="../../Categorias/gato/gato.html">Gatos</a></li>
+                    <li><a href="../../Categorias/passaro/passaro.html">Pássaros</a></li>
+                    <li><a href="../../Categorias/reptil/reptil.html">Répteis</a></li>
+                    <li><a href="../../Categorias/marinho/marinho.html">Marinhos</a></li>
+                </ul>
+            </li>
+            <li class="menu-container"><h3>Produtos</h3>
+                <ul class="submenu">
+                    <li><a href="../../Produtos/racao/racao.html">Rações</a></li>
+                    <li><a href="../../Produtos/brinquedo/brinquedo.html">Brinquedos</a></li>
+                    <li><a href="../../Produtos/acessorio/acessorio.html">Acessórios</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <section>
+            <div id="mini-categories">
+                <a href="#" class="scrollLink" data-scroll="445"><button class="utton"><span>Rações</span></button></a>
+                <a href="#" class="scrollLink" data-scroll="1000"><button class="utton"><span>Brinquedos</span></button></a>
+                <a href="#" class="scrollLink" data-scroll="1500"><button class="utton"><span>Acessórios</span></button></a>
+            </div>
+        </section>
+        <section>
+            <h3>Gatos</h3>
+            <div class="cat">
+                <button class="cat-arrow left">&#10094;</button>
+                <div class="cat-track-container">
+                    <div class="cat-track">
+                        <a href="#"><button><img src="../../../Images/categoria/gato/azul-russo.jpeg" alt="Gato 1"><p>Pelagem Macia <br> Temperamento Calmo</p><br><span>R$1.800</span><div><strong>Azul Russo</strong></div></button></a>
+                        <a href="#"><button><img src="../../../Images/categoria/gato/Bobtail.jpeg" alt="Gato 2"><p>Personalidade Amigável <br> Cauda Curta e Distinta</p><br><span>R$1.300</span><div><strong>Bobtail</strong></div></button></a>
+                        <a href="#"><button><img src="../../../Images/categoria/gato/Burmes.jpeg" alt="Gato 3"><p>Personalidade Afetuosa <br> Energia e Curiosidade</p><br><span>R$2.500</span><div><strong>Burmês</strong></div></button></a>
+                        <a href="#"><button><img src="../../../Images/categoria/gato/Maine-coon.jpeg" alt="Gato 4"><p>Tamanho Imponente <br> Temperamento Amigável</p><br><span>R$3.000</span><div><strong>Maine Coon</strong></div></button></a>
+                        <a href="#"><button><img src="../../../Images/categoria/gato/Somali.jpeg" alt="Gato 5"><p>Pelagem Atraente <br> Personalidade Ativa</p><br><span>R$4.900</span><div><strong>Somali</strong></div></button></a>
+                        <a href="#"><button><img src="../../../Images/categoria/gato/Ragdoll.jpg" alt="Gato 6"><p>Temperamento Calmo <br> Pelagem Longa e Sedosa</p><br><span>R$3.000</span><div><strong>Ragdoll</strong></div></button></a>
+                        <a href="#"><button><img src="../../../Images/categoria/gato/Siberiano.jpg" alt="Gato 7"><p>Pelagem Espessa <br> Personalidade Afetuosa</p><br><span>R$7.000</span><div><strong>Siberiano</strong></div></button></a>
+                        <a href="#"><button><img src="../../../Images/categoria/gato/Siames.jpeg" alt="Gato 8"><p>Vocalização e Comunicação <br> Aparência Elegante</p><br><span>R$3.200</span><div><strong>Siamês</strong></div></button></a>
+                        <a href="#"><button><img src="../../../Images/categoria/gato/Adote.jpeg" alt="Gato 9"><h3>Adote</h3><br><span>Saiba mais...</span><div></button></a>
+                        
+                    </div>
+                </div>
+                <button class="cat-arrow right">&#10095;</button>
+            </div>
+        </section>
+        <section>
+            <h3>Rações</h3>
+                    <div class="cat">
+                        <div class="cat-track-containeri">
+                            <div class="cat-tracke">
+                                <a href="#"><button><img src="../../../Images/categoria/gato/produto/racao/Equilibrio.jpg" alt="Gato 1"><p>Ração Seca Equilíbrio Frango para Gatos Castrados</p><div><strong>R$130,00</strong></div></button></a>
+                                <a href="#"><button><img src="../../../Images/categoria/gato/produto/racao/Nestle-Purina.jpg" alt="Gato 2"><p>Ração Seca Nestlé Purina Pro Plan Trato Urinário Frango para Gatos Adultos</p><div><strong>R$210,20</strong></div></button></a>
+                                <a href="#"><button><img src="../../../Images/categoria/gato/produto/racao/Nutrilus-pro.webp" alt="Gato 3"><p>Ração Seca Nutrilus Pro+ Salmão para Gatos Adultos Castrados</p><div><strong>R$190,50</strong></div></button></a>
+                                <a href="#"><button><img src="../../../Images/categoria/gato/produto/racao/Suprema.jpg" alt="Gato 4"><p>Ração Seca Suprema Sabor Carne para Gatos Adultos</p><div><strong>R$91,20</strong></div></button></a>
+                                <a href="#"><button><img src="../../../Images/categoria/gato/produto/racao/True.webp" alt="Gato 5"><p>Ração Seca True para Gatos Adultos Castrados</p><div><strong>R$59,99</strong></div></button></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Brinquedos</h3>
+                    <div class="cat">
+                        <div class="cat-track-containeri">
+                            <div class="cat-tracka">
+                                <a href="#"><button><img src="../../../Images/categoria/gato/produto/brinquedo/Bola.webp" alt="Racao 1"><p>Brinquedo Kroco Bolinha 6 Unidades Coloridas para Gatos</p><div><strong>R$6,30</strong></div></button></a>
+                                <a href="#"><button><img src="../../../Images/categoria/gato/produto/brinquedo/Centopeia.webp" alt="Racao 2"><p>Brinquedo Kroco Centopeia para Gatos</p><div><strong>R$19,99</strong></div></button></a>
+                                <a href="#"><button><img src="../../../Images/categoria/gato/produto/brinquedo/Peixe.webp" alt="Racao 3"><p>Brinquedo Kroco Peixe para Gatos</p><div><strong>R$8,10</strong></div></button></a>
+                                <a href="#"><button><img src="../../../Images/categoria/gato/produto/brinquedo/Chalesco.webp" alt="Racao 4"><p>Brinquedo Chalesco Kitty Ball Cores Variadas</p><div><strong>R$39,90</strong></div></button></a>
+                                <a href="#"><button><img src="../../../Images/categoria/gato/produto/brinquedo/Penas.webp" alt="Racao 5"><p>Brinquedo Kroco Bolinha Pelúcia com Penas para Gatos</p><div><strong>R$30,80</strong></div></button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Acessórios</h3>
+                    <div class="cat">
+                        <div class="cat-track-containeri">
+                            <div class="cat-tracka">
+                                <a href="#"><button><img src="../../../Images/categoria/gato/produto/acessorio/Utensilios.jpg" alt="Racao 1"><p>Utensílios para facilitar a sua vida e do seu felino</p><div><strong>Saiba mais</strong></div></button></a>
+                                <a href="#"><button><img src="../../../Images/categoria/gato/produto/acessorio/Cama.jpeg" alt="Racao 2"><p>Mais conforto para o seu gato</p><div><strong>Saiba mais</strong></div></button></a>
+                                <a href="#"><button><img src="../../../Images/categoria/gato/produto/acessorio/Roupa.webp" alt="Racao 3"><p>Roupas para deixar o seu gato mais estiloso</p><div><strong>Saiba mais</strong></div></button></a>
+                                <a href="#"><button><img src="../../../Images/categoria/gato/produto/acessorio/Produto.jpg" alt="Racao 4"><p>Produtos para deixar o seu gato mais cheiroso</p><div><strong>Saiba mais</strong></div></button></a>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+    </main>
+
+    <a href="https://wa.me/5521975427996" target="_blank">
+        <div class="interaction-area">
+            <div class="green-ball"><img src="../Images/Wa.png" alt=""></div>
+            <div class="study-text">Entre em contato com a gente! <br> (21) 97542-7996</div>
+        </div>
+    </a>
+
+    <footer>
+        <div>
+            <p><strong>Institucional</strong><br>
+                <a href="#">Sobre a Pets</a><br>
+                <a href="#">Trabalhe Conosco</a><br>
+                <a href="#">Canal de Denúncias</a><br>
+                <a href="#">Relações com Investidores</a><br>
+                <a href="#">Portal Pets</a><br>
+                <a href="#">Expansão</a><br>
+                <a href="#">Mapa do Site</a><br>
+            </p>
+        </div>
+    
+        <div class="bord"></div>
+    
+        <div class="bort">
+            <p><strong>Aqui Você Encontra</strong><br>
+                <a href="#">Doe para Pets</a><br>
+                <a href="#">Retire na Loja</a><br>
+                <a href="#">Pesquise Lá, Compre Aqui</a><br>
+                <a href="#">Nossos Diferenciais</a><br>
+                <a href="#">Plubs</a><br>
+                <a href="#">Como Comprar</a><br>
+                <a href="#">Petcommerce</a><br>
+            </p>
+        </div>
+    
+        <div class="bord"></div>
+    
+        <div class="bort">
+            <p><strong>Ajuda</strong><br>
+                <a href="#">Atendimento</a><br>
+                <a href="#">Meus Pedidos</a><br>
+                <a href="#">Meu Cadastro</a><br>
+                <a href="#">Minhas Assinaturas</a><br>
+                <a href="#">Ouvidoria</a><br>
+            </p>
+        </div>
+    </footer>
+    <p style="text-align: center;"><strong>Projeto feito apenas por estudo.</strong></p>
+
+    <script src="../../../Js/slide.js"></script>
+    <script>
+        const ball = document.querySelector('.green-ball');
+        const text = document.querySelector('.study-text');
+        const interactionArea = document.querySelector('.interaction-area');
+
+        interactionArea.addEventListener('mouseenter', () => {
+            ball.style.transform = 'translateX(-200px)';
+            text.style.opacity = '1';
+        });
+
+        interactionArea.addEventListener('mouseleave', () => {
+            ball.style.transform = 'translateX(0)';
+            text.style.opacity = '0';
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const track = document.querySelector('.cat-track');
+            const arrows = document.querySelectorAll('.cat-arrow');
+            let currentPosition = 0;
+
+            arrows.forEach(arrow => {
+                arrow.addEventListener('click', function() {
+                    const trackWidth = track.scrollWidth;
+                    const containerWidth = track.parentElement.offsetWidth;
+                    const maxPosition = trackWidth - containerWidth;
+                    const shift = containerWidth / 3; // Ajuste para o tamanho do deslocamento desejado
+
+                    if (arrow.classList.contains('left')) {
+                        currentPosition -= shift;
+                        if (currentPosition < 0) currentPosition = 0;
+                    } else {
+                        currentPosition += shift;
+                        if (currentPosition > maxPosition) currentPosition = maxPosition;
+                    }
+
+                    track.style.transform = `translateX(-${currentPosition}px)`;
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Seleciona todos os links com a classe 'scrollLink'
+            const scrollLinks = document.querySelectorAll('.scrollLink');
+    
+            scrollLinks.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault(); // Evita o comportamento padrão do link
+    
+                    // Recupera o valor do atributo data-scroll e converte para número
+                    const scrollToPosition = parseInt(link.getAttribute('data-scroll'), 10);
+    
+                    // Rola a página até a posição especificada
+                    window.scrollTo({
+                        top: scrollToPosition,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+footer {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-between; /* Distribui as divs com espaço entre elas */
+    padding: 20px; /* Adiciona espaçamento interno */
+    background-color: black; /* Cor de fundo do footer */
+    border-top: 1px solid #807f7f; /* Linha superior para separação */
+    color: white;
+    flex-wrap: wrap; /* Permite que as divs quebrem para a próxima linha se o espaço for insuficiente */
+    margin-top: 80px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer div {
+    flex: 1; /* Faz com que cada div ocupe o mesmo espaço */
+    margin: 10px; /* Espaçamento ao redor de cada div */
+}
+
+.bord{
+    border-left: 1px solid #807f7f;
+}
+
+.bort{
+    margin-left: -280px;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+footer strong {
+    display: block;
+    margin-bottom: 10px;
+}
